@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7367208505.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            height: auto;
+            padding-bottom: 7%;
+            background-color: #222e3e;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        /****************** section 1 *************/
+
+
+        .container .section1 {
+            width: 100%;
+            height: auto;
+            background-color: #222e3e;
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 18px;
+            position: relative;
+            padding-bottom: 2%;
+        }
+
+        .container .section1 .logo {
+            width: 180px;
+            height: 90px;
+            margin-left: -30px;
+        }
+
+
+        /*********** nav section *********/
+        .nav {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            display: none;
+            padding: 0;
+            background-color: #222e3e;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .nav a {
+            display: block;
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+            font-size: 18px;
+            height: 50px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            line-height: 50px;
+            padding: 0 3%;
+        }
+
+        .nav a:focus {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .height {
+            display: block;
+        }
+
+
+        /************ section 2 ************/
+        .section2 {
+            width: 100%;
+            height: 220px;
+            background-color: rebeccapurple;
+        }
+
+        .section2 .slides {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            display: none;
+        }
+
+        .section2 .slides img {
+            width: 100%;
+            height: 100%
+        }
+        /************ section 3 ***********/
+        .section3{
+            width:100%;
+            height:auto;
+            padding: 2% 0 2% 10% ;
+            background-color: #222e3e;
+        }
+        .section3 .part{
+            font-size: 20px;
+            color: aliceblue;
+        }
+        .section3 .movies{
+            width:auto;
+            overflow-x: scroll;
+            display: flex;
+            align-items: center;
+        }
+        .section3 .movies img{
+            width:270px;
+            height:140px;
+            margin-right: 10px;
+            border-radius: 10px;
+        }
+         #part3 img{
+            width:200px;
+            height:200px
+        }
+        #part4 img{
+            width:250px;
+            height:200px
+        }
+        #part5 img{
+            width:250px;
+            height:200px
+        }
+        #part6 img{
+            width:250px;
+            height:200px
+        }
+
+        /************* section 4 **************/
+        .section4{
+            width:100%;
+            background-color: #222e3e;
+            text-align: center;
+        }
+        .section4 img{
+            width:250px
+        }
+        .section4 p{
+            color:#5eaaa8;
+            width:80%;
+            padding-top: 5%;
+            margin: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="section1">
+            <img src="prime_logo.jpg" class="logo">
+            <p>Browse <i class="fas fa-sort-down link"></i></p>
+            <i class="fas fa-search"></i>
+            <img src="user.png" width="30px" height="30px">
+        </div>
+        <div class="nav">
+            <a href="">Home</a>
+            <a href="">TV Showes</a>
+            <a href="">Movies</a>
+            <a href="">Kids</a>
+        </div>
+
+        <div class="section2">
+            <div class="slides">
+                <img src="mirzapur.jpg">
+            </div>
+            <div class="slides">
+                <img src="sacredgames.jpg">
+            </div>
+            <div class="slides">
+                <img src="moneyheist.png">
+            </div>
+            <div class="slides">
+                <img src="tandav.jpg">
+            </div>
+        </div>
+
+        <div class="section3">
+            <div class="part" id="part1">
+                <p>Watch next TV and movies.</p>
+                <div class="movies">
+                  <img src="mirzapur.jpg">
+                  <img src="moneyheist.png">
+                  <img src="sacredgames.jpg">
+                  <img src="tandav.jpg">
+                </div>
+            </div>
+
+            <div class="part" id="part2">
+                <p>Amazon Original series.</p>
+                <div class="movies">
+                  <img src="mirzapur.jpg">
+                  <img src="moneyheist.png">
+                  <img src="sacredgames.jpg">
+                  <img src="tandav.jpg">
+                </div>
+            </div>
+
+
+            <div class="part" id="part3">
+                <p>Watch in your language.</p>
+                <div class="movies">
+                  <img src="hindi.PNG">
+                  <img src="english.PNG">
+                  <img src="telugu.PNG">
+                  <img src="tamil.PNG">
+                  <img src="marati.PNG">
+                </div>
+            </div>
+
+            <div class="part" id="part4">
+                <p>Hindi Movies.</p>
+                <div class="movies">
+                    <img src="holiday.jpg">
+                  <img src="okjaanu.jpg">
+                  <img src="chichore.jpg">
+                  <img src="war.jpg">
+                  <img src="sultan.jpg">
+                  <img src="3idiot.png">
+                </div>
+            </div>
+
+            <div class="part" id="part5">
+                <p>Telugu Movies.</p>
+                <div class="movies">
+                    <img src="sahoo.jpg">
+                  <img src="naaperusurya.jpg">
+                  <img src="dhruva.jpg">
+                  <img src="rangastalam.jpg">
+                  <img src="saira.jpg">
+                  <img src="spyder.jpg">
+                </div>
+            </div>
+
+            <div class="part" id="part6">
+                <p>Engilsh Movies.</p>
+                <div class="movies">
+                    <img src="endgame.jpg">
+                  <img src="infinitywar.jpg">
+                  <img src="meninblack.jpg">
+                  <img src="terminitor.jpg">
+                  <img src="homecoming.jpg">
+                  <img src="farfromhome.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="section4">
+            <img src="prime_logo.jpg">
+            <p>Terms and Privacy Notice Send us feedback Help</p>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $('.section1 .link').click(function () {
+            $('.nav').toggleClass('height');
+
+        })
+
+
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("slides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 4000); // Change image every 2 seconds
+        }
+
+    </script>
+</body>
+
+</html>
